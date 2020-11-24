@@ -8,7 +8,7 @@ interface PageHeaderProps {
     title: string;
     titleVariant?: TitleVariantType;
     additionalButtonComponent?: JSX.Element;
-    callback: (...p: any) => any;
+    callback?: (...p: any) => any;
 }
 
 const PageHeader = (props: PageHeaderProps) => {
@@ -21,9 +21,11 @@ const PageHeader = (props: PageHeaderProps) => {
               <Typography variant={titleVariant || 'h4'} align='left' display='inline'>
                 {title}
               </Typography>
-              <div style={{ display: '-webkit-box' }}>
-                {additionalButtonComponent || <Button startIcon={<Add />} variant='contained' color='primary' onClick={callback}>{"Add New"}</Button>}
-              </div>
+              { callback && 
+                <div style={{ display: '-webkit-box' }}>
+                  {additionalButtonComponent || <Button startIcon={<Add />} variant='contained' color='primary' onClick={callback}>{"Add New"}</Button>}
+                </div>
+              }
             </Grid>
             <Box py={2}>
               <Divider />

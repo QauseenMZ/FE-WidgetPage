@@ -4,6 +4,8 @@ import { IconButton, TableContainer, Table, TableCell, Paper, TableBody, TableRo
 import DeleteForever from '@material-ui/icons/DeleteForever';
 import { LinguisticModel } from '../../modals/linguistic.model';
 import PageHeader from '../PageHeader/PageHeader';
+import history from '../../utils/history';
+import { pathURLs } from '../../utils/routes.utils';
 
 const WidgetList = () => {
   const createData = (name: string, language: string) => {
@@ -30,7 +32,7 @@ const WidgetList = () => {
 
   return (
     <>
-      <PageHeader title="Linguistic Details" callback={() => alert("clicked")}/>
+      <PageHeader title="Linguistic Details" callback={() => history.push(pathURLs.add)}/>
       <TableContainer component={Paper}>
       <Table aria-label="simple table">
         <TableHead>
