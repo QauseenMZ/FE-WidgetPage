@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, ChangeEvent } from 'react';
 import { makeStyles, Theme, createStyles, withStyles } from '@material-ui/core/styles';
 import { Paper, Typography, Stepper, Step, StepLabel, Button, TextField, FormControl, InputLabel, Select, MenuItem, Container} from '@material-ui/core';
 import { ArrowForwardIos, ArrowBackIos } from '@material-ui/icons'
 import PageHeader from '../PageHeader/PageHeader';
+import LanguageSelect from '../LanguageSelect/LanguageSelect';
 import history from '../../utils/history';
 
 import './AddWidget.css';
@@ -24,7 +25,8 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const AddWidget = () => {
     const classes = useStyles();
-    const [activeStep, setActiveStep] = React.useState(0);
+    const [activeStep, setActiveStep] = useState(0);
+    const [language, setLanguage] = useState<string>('')
     const steps = ['Add name', 'Select language'];
 
     const handleNext = () => {
@@ -43,26 +45,26 @@ const AddWidget = () => {
     const getStepContent = (step: number) => {
         switch (step) {
           case 0:
-            return <TextField id="name" label="Name" variant="outlined" fullWidth/>
+            return <TextField id="name" label="Name" variant="outlined" size='small' fullWidth/>
           case 1:
-            return (
-            <FormControl variant="outlined" fullWidth> 
-              <InputLabel id="select-language">Language</InputLabel>
-              <Select
-                labelId="select-language"
-                id="language"
-                value={10}
-                onChange={() => {}}
-                label="Language"
-              >
-                <MenuItem value="">
-                  <em>None</em>
-                </MenuItem>
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-              </Select>
-            </FormControl>
+            return (<LanguageSelect val={language} change={(e: ChangeEvent<HTMLInputElement>, val: string) => setLanguage(val)} />
+            // <FormControl variant="outlined" fullWidth> 
+            //   <InputLabel id="select-language">Language</InputLabel>
+            //   <Select
+            //     labelId="select-language"
+            //     id="language"
+            //     value={10}
+            //     onChange={() => {}}
+            //     label="Language"
+            //   >
+            //     <MenuItem value="">
+            //       <em>None</em>
+            //     </MenuItem>
+            //     <MenuItem value={10}>Ten</MenuItem>
+            //     <MenuItem value={20}>Twenty</MenuItem>
+            //     <MenuItem value={30}>Thirty</MenuItem>
+            //   </Select>
+            // </FormControl>
             );
           case 2:
             return;
