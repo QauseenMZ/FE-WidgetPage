@@ -1,7 +1,7 @@
 # Widget Page - Front End
 
 ## Demo URL:
-https://github.com/QauseenMZ/WidgetPage-FrontEnd
+https://widgetpage.web.app/
 
 ## Available Scripts
 
