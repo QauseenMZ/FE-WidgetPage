@@ -6,16 +6,18 @@ import { pathURLs } from '../../utils/routes.utils';
 
 const MainPage = () => {
   return (
-    <Switch>
-      {/* Widget List View */}
-      <Route exact path={pathURLs.defaultRoot}
-        render={() => <WidgetList />}
-      />
+    <div style={{marginTop: '10%'}}>
+      <Switch>
+        {/* Widget List View */}
+        <Route exact path={pathURLs.defaultRoot}
+          render={() => <WidgetList />}
+        />
 
-      <Route exact path={pathURLs.add}
-        render={() => <AddWidget />}
-      />
-    </Switch>
+        <Route exact path={pathURLs.add}
+          render={() => <AddWidget />}
+        />
+      </Switch>
+    </div>
   )
 }
 

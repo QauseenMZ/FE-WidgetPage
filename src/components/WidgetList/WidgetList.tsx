@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { withStyles, Theme, createStyles } from '@material-ui/core/styles';
+import { withStyles, Theme, createStyles, fade } from '@material-ui/core/styles';
 import { IconButton, TableContainer, Table, TableCell, Paper, TableBody, TableRow, TableHead, Typography } from '@material-ui/core';
 import DeleteForever from '@material-ui/icons/DeleteForever';
 import { LinguisticModel } from '../../modals/linguistic.model';
@@ -11,11 +11,11 @@ import { pathURLs } from '../../utils/routes.utils';
 const StyledTableCell = withStyles((theme: Theme) =>
   createStyles({
     head: {
-      backgroundColor: theme.palette.common.black,
-      color: theme.palette.common.white,
+      backgroundColor: fade(theme.palette.common.black, 0.15),
+      color: theme.palette.common.black,
     },
     body: {
-      fontSize: 14,
+      fontSize: 20,
     },
   }),
 )(TableCell);
