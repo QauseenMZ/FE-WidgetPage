@@ -1,7 +1,7 @@
 # Widget Page - Front End
 
 ## Demo URL:
-https://widgetpage.web.app/
+https://widgetpage.firebaseapp.com/
 
 ## Available Scripts
 
