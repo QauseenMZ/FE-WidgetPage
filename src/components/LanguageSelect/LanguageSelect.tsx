@@ -55,6 +55,4 @@ const LanguageSelect = ({ change, val, error }: DropdownProps) => {
   );
 };
 
-export default React.memo(LanguageSelect, (prevProps: DropdownProps, nextProps: DropdownProps) => {
-  return (prevProps.val === nextProps.val);
-});
+export default LanguageSelect;
