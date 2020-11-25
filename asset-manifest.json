@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/WidgetPage-FrontEnd/static/css/main.0e6a0309.chunk.css",
+    "main.js": "/WidgetPage-FrontEnd/static/js/main.6acb7c7b.chunk.js",
+    "main.js.map": "/WidgetPage-FrontEnd/static/js/main.6acb7c7b.chunk.js.map",
+    "runtime-main.js": "/WidgetPage-FrontEnd/static/js/runtime-main.3826bff7.js",
+    "runtime-main.js.map": "/WidgetPage-FrontEnd/static/js/runtime-main.3826bff7.js.map",
+    "static/js/2.c6037062.chunk.js": "/WidgetPage-FrontEnd/static/js/2.c6037062.chunk.js",
+    "static/js/2.c6037062.chunk.js.map": "/WidgetPage-FrontEnd/static/js/2.c6037062.chunk.js.map",
+    "static/js/3.a6c659a6.chunk.js": "/WidgetPage-FrontEnd/static/js/3.a6c659a6.chunk.js",
+    "static/js/3.a6c659a6.chunk.js.map": "/WidgetPage-FrontEnd/static/js/3.a6c659a6.chunk.js.map",
+    "index.html": "/WidgetPage-FrontEnd/index.html",
+    "static/css/main.0e6a0309.chunk.css.map": "/WidgetPage-FrontEnd/static/css/main.0e6a0309.chunk.css.map",
+    "static/js/2.c6037062.chunk.js.LICENSE.txt": "/WidgetPage-FrontEnd/static/js/2.c6037062.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3826bff7.js",
+    "static/js/2.c6037062.chunk.js",
+    "static/css/main.0e6a0309.chunk.css",
+    "static/js/main.6acb7c7b.chunk.js"
+  ]
+}
